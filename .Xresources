@@ -1,0 +1,53 @@
+!------------------------------------------------------------------------------
+! Yeahconsole (drop down console wrapper)
+! -----------------------------------------------------------------------------
+
+yeahconsole.term:		urxvt
+yeahconsole.screenWidth:	1920
+yeahconsole.consoleHeight:	30
+yeahconsole.toggleKey:		None+F12
+
+
+!-------------------------------------------------------------------------------
+! Xft settings
+!-------------------------------------------------------------------------------
+
+Xft.dpi:                    102
+Xft.antialias:              true 
+Xft.rgba:                   rgb
+Xft.hinting:                true
+Xft.hintstyle:              hintslight
+
+!-------------------------------------------------------------------------------
+! URxvt settings font and other
+!-------------------------------------------------------------------------------
+
+URxvt.depth:            32
+URxvt.geometry:         90x30
+URxvt.fading:           0
+URxvt.scrollBar:	false
+!URxvt.intensityStyles:	false
+URxvt.cursorColor:	white
+URxvt.letterSpace:	-1
+URxvt.allow_bold:	true
+
+! Fonts
+URxvt.font:		xft:inconsolata:size=11
+URxvt.boldFont:		xft:inconsolata:size=11
+
+!! Extensions
+URxvt.perl-ext-common: default,matcher,keyboard-select
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.matcher.rend.: Uline Bold fg5
+
+!! keyboard-select:
+URxvt.keysym.M-Escape:	perl:keyboard-select:activate
+
+!! Color scheme
+URxvt.background:	#000000
+URxvt.foreground:	#ffffff
+
+
+
+
