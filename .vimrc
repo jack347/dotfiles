@@ -102,8 +102,10 @@ let g:airline#extensions#tmuxline#enabled=0
 " Enable line numbers
 set nu
 
-" Bind keys for tab switching
+" Enable spellchecking
+map <F6> :setlocal spell! spelllang=en_us<CR>
 
+" Bind keys for tab switching
 nnoremap tn :tabnext<CR>
 nnoremap tp :tabprev<CR>
 " Prompts for file name; if existing then open file; if new then create new
