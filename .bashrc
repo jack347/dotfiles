@@ -115,5 +115,7 @@ fi
 # added by Anaconda3 installer
 export PATH="/home/jack/anaconda3/bin:$PATH"
 
-# added by Anaconda3 installer
-export PATH="/home/jack/anaconda3/bin:$PATH"
+# change background color on ow type directory (seen in windows ntfs partitions) because it annoys the hell out of me
+export LS_COLORS=$LS_COLORS:'ow=30;47'
+#so as not to be disturbed by Ctrl-S ctrl-Q in terminals:
+stty -ixon

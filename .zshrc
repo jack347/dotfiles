@@ -9,7 +9,7 @@ export PATH=$HOME/anaconda3/bin:$PATH
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="spaceship"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -94,3 +94,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# change background color on ow type directory (seen in windows ntfs partitions) because it annoys the hell out of me
+export LS_COLORS=$LS_COLORS:'ow=30;47'
+#so as not to be disturbed by Ctrl-S ctrl-Q in terminals:
+stty -ixon
+#sourcing the font maps (instead of calling a glyph by its codepoint (eg. \uf00c) but by name (eg.
+#$CODEPOINT_OF_AWESOME_CHECK) to make shell configurations and scripts more resilient to font updates, as not all fonts
+#follow the Unicode mapping
+source $HOME/.fonts/fontmaps/i_all.sh
+
